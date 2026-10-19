@@ -46,10 +46,10 @@ The application is implemented in Python using a structured, modular approach:
   ![Terminal Output](./Screenshots/Class_summary.png)
 
 * Search student Report
-  ![Terminal Output](./Screenshots/Student_summary.png)
+  ![Terminal Output](./Screenshots/Student_Summary.png)
 
 * Create Excel report
-  ![Terminal Output](./Screenshots/Report_summary.png)
+  ![Terminal Output](./Screenshots/Report.png)
 
 
 ## 8. Final Outcome
