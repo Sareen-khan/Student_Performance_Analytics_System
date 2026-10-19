@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 
@@ -17,7 +16,7 @@ df["overall_percentage"] = (
     + df["assignment_percent"] * 0.15
 )
 
-# Find performance category
+# Performance category
 category = []
 
 for score in df["overall_percentage"]:
@@ -40,8 +39,8 @@ for marks in df["average_marks"]:
         result.append("Pass")
     else:
         result.append("Fail")
-
 df["result"] = np.array(result)
+df.to_excel("student_performance_report.xlsx",index=False)
 
 # Display menu
 print("STUDENT PERFORMANCE SYSTEM")
@@ -78,7 +77,7 @@ elif choice == "2":
 
             found = True
 
-            print("\\nStudent Name:", df.loc[i, "student_name"])
+            print("\nStudent Name:", df.loc[i, "student_name"])
             print("Student ID:", df.loc[i, "student_id"])
             print("Department:", df.loc[i, "department"])
             print("Maths Marks:", df.loc[i, "maths"])
